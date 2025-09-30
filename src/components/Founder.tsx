@@ -101,38 +101,62 @@ export const Founder = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  onClick={() => window.open('https://www.linkedin.com/in/alex-sedlak-5b9104197/', '_blank')}
                   className="group"
+                  asChild
                 >
-                  <Linkedin className="mr-2 group-hover:scale-110 transition-transform" />
-                  LinkedIn
+                  <a 
+                    href="https://www.linkedin.com/in/alex-sedlak-5b9104197/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <Linkedin className="mr-2 group-hover:scale-110 transition-transform" />
+                    LinkedIn
+                  </a>
                 </Button>
                 <Button
                   variant="outline"
                   size="lg"
-                  onClick={() => window.open('https://www.youtube.com/@alexsedlak1', '_blank')}
                   className="group"
+                  asChild
                 >
-                  <Youtube className="mr-2 group-hover:scale-110 transition-transform" />
-                  YouTube
+                  <a 
+                    href="https://www.youtube.com/@alexsedlak1" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <Youtube className="mr-2 group-hover:scale-110 transition-transform" />
+                    YouTube
+                  </a>
                 </Button>
                 <Button
                   variant="outline"
                   size="lg"
-                  onClick={() => window.open('https://www.instagram.com/alexsedlak/', '_blank')}
                   className="group"
+                  asChild
                 >
-                  <Instagram className="mr-2 group-hover:scale-110 transition-transform" />
-                  Instagram
+                  <a 
+                    href="https://www.instagram.com/alexsedlak/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <Instagram className="mr-2 group-hover:scale-110 transition-transform" />
+                    Instagram
+                  </a>
                 </Button>
                 <Button
                   variant="outline"
                   size="lg"
-                  onClick={() => window.open('https://x.com/alexxsedlak', '_blank')}
                   className="group"
+                  asChild
                 >
-                  <Twitter className="mr-2 group-hover:scale-110 transition-transform" />
-                  Twitter
+                  <a 
+                    href="https://x.com/alexxsedlak" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <Twitter className="mr-2 group-hover:scale-110 transition-transform" />
+                    Twitter
+                  </a>
                 </Button>
               </div>
             </div>
@@ -143,13 +167,19 @@ export const Founder = () => {
             <Button 
               variant="accent" 
               size="xl"
-              onClick={() => window.open('https://whop.com/media-labs?a=muhammadabdurrahman6004', '_blank')}
               className="group"
+              asChild
             >
-              Learn From Alex Today
-              <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
+              <a 
+                href="https://whop.com/media-labs?a=muhammadabdurrahman6004" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Learn From Alex Today
+                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </a>
             </Button>
           </div>
         </div>
