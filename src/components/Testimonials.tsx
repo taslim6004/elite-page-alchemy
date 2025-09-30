@@ -65,12 +65,12 @@ export const Testimonials = () => {
             </p>
           </div>
 
-          {/* Testimonials Grid */}
+          {/* Testimonials Grid with 3D Effects */}
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="glass-card p-8 rounded-3xl hover:scale-[1.02] transition-all duration-300 group relative overflow-hidden"
+                className="glass-card-3d p-8 rounded-3xl hover:scale-105 hover:rotate-3d transition-all duration-500 group relative overflow-hidden transform-3d"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Quote Icon Background */}

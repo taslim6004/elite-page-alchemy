@@ -61,12 +61,12 @@ export const Features = () => {
             </p>
           </div>
 
-          {/* Feature Cards */}
+          {/* Feature Cards with 3D Effects */}
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group glass-card p-8 rounded-3xl hover:scale-[1.02] transition-all duration-300 border-2 border-transparent hover:border-primary/30"
+                className="group glass-card-3d p-8 rounded-3xl hover:scale-105 hover:rotate-3d transition-all duration-500 border-2 border-transparent hover:border-primary/30 transform-3d"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.gradient} p-0.5 mb-6 group-hover:scale-110 transition-transform`}>

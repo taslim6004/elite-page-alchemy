@@ -9,25 +9,26 @@ export const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 z-0">
+      {/* Animated 3D Background */}
+      <div className="absolute inset-0 z-0 transform-3d">
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-cover bg-center opacity-20 animate-float"
           style={{ backgroundImage: `url(${heroBg})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background transform-3d" />
         
-        {/* Animated Stars/Particles */}
-        <div className="absolute inset-0 overflow-hidden">
+        {/* Animated 3D Stars/Particles */}
+        <div className="absolute inset-0 overflow-hidden transform-3d">
           {[...Array(50)].map((_, i) => (
             <div
               key={i}
-              className="absolute w-1 h-1 bg-primary rounded-full animate-float"
+              className="absolute w-1 h-1 bg-primary rounded-full animate-float transform-3d"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
                 animationDelay: `${Math.random() * 6}s`,
                 opacity: Math.random() * 0.5 + 0.3,
+                transform: `translateZ(${Math.random() * 100}px)`,
               }}
             />
           ))}

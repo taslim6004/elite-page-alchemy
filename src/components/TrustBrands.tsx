@@ -21,20 +21,20 @@ export const TrustBrands = () => {
           </p>
         </div>
         
-        {/* Brand Logos Grid */}
-        <div className="relative overflow-hidden">
-          <div className="flex items-center justify-center gap-8 md:gap-12 flex-wrap">
+        {/* Brand Logos Grid - Large Popup Animation */}
+        <div className="relative overflow-hidden py-8">
+          <div className="flex items-center justify-center gap-12 md:gap-16 flex-wrap">
             {brands.map((brand, index) => (
               <div
                 key={index}
-                className="relative group animate-fade-in-scale"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="relative group animate-popup-3d"
+                style={{ animationDelay: `${index * 0.3}s` }}
               >
-                <div className="w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden glass-card p-4 hover:scale-110 transition-transform duration-300">
+                <div className="w-40 h-40 md:w-56 md:h-56 rounded-3xl overflow-hidden glass-card-3d p-6 hover:scale-110 hover:rotate-3d transition-all duration-500 transform-3d">
                   <img
                     src={brand.url}
                     alt={brand.alt}
-                    className="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    className="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-500"
                     loading="lazy"
                   />
                 </div>

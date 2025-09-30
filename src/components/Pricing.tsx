@@ -58,12 +58,12 @@ export const Pricing = () => {
             </p>
           </div>
 
-          {/* Pricing Card */}
-          <div className="relative max-w-2xl mx-auto">
-            {/* Glow Effect */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-primary blur-2xl opacity-30 animate-pulse" />
+          {/* Pricing Card with 3D Effects */}
+          <div className="relative max-w-2xl mx-auto transform-3d">
+            {/* 3D Glow Effect */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-primary blur-2xl opacity-30 animate-pulse transform-3d" />
             
-            <div className="relative glass-card p-10 md:p-12 rounded-3xl border-2 border-primary/30">
+            <div className="relative glass-card-3d p-10 md:p-12 rounded-3xl border-2 border-primary/30 hover:rotate-3d transition-all duration-500">
               {/* Badge */}
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                 <div className="bg-gradient-to-r from-primary to-accent text-primary-foreground px-6 py-2 rounded-full text-sm font-bold shadow-lg">

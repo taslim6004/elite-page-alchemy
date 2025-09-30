@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Linkedin, Award, Users, TrendingUp } from "lucide-react";
-import founderImage from "@/assets/founder.jpg";
+import { Linkedin, Award, Users, TrendingUp, Youtube, Instagram, Twitter } from "lucide-react";
+import founderImage from "@/assets/alex-sedlak.jpg";
 
 export const Founder = () => {
   const achievements = [
@@ -37,7 +37,7 @@ export const Founder = () => {
               <div className="relative glass-card p-4 rounded-3xl">
                 <img
                   src={founderImage}
-                  alt="Alex P Sedlak - Founder of MediaLabs UGC Agency"
+                  alt="Alex Sedlak - Founder of MediaLabs UGC Agency"
                   className="w-full h-auto rounded-2xl object-cover"
                   loading="lazy"
                 />
@@ -47,7 +47,7 @@ export const Founder = () => {
                       AP
                     </div>
                     <div>
-                      <div className="font-bold text-foreground text-lg">Alex P Sedlak</div>
+                      <div className="font-bold text-foreground text-lg">Alex Sedlak</div>
                       <div className="text-sm text-muted-foreground">Founder & CEO, MediaLabs</div>
                     </div>
                   </div>
@@ -96,16 +96,43 @@ export const Founder = () => {
                 ))}
               </div>
 
-              {/* Social Proof */}
-              <div className="flex items-center gap-4 pt-4">
+              {/* Social Links */}
+              <div className="flex items-center gap-3 pt-4 flex-wrap">
                 <Button
                   variant="outline"
                   size="lg"
-                  onClick={() => window.open('https://www.linkedin.com/in/alexpaulredlak/', '_blank')}
+                  onClick={() => window.open('https://www.linkedin.com/in/alex-sedlak-5b9104197/', '_blank')}
                   className="group"
                 >
                   <Linkedin className="mr-2 group-hover:scale-110 transition-transform" />
-                  Connect on LinkedIn
+                  LinkedIn
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  onClick={() => window.open('https://www.youtube.com/@alexsedlak1', '_blank')}
+                  className="group"
+                >
+                  <Youtube className="mr-2 group-hover:scale-110 transition-transform" />
+                  YouTube
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  onClick={() => window.open('https://www.instagram.com/alexsedlak/', '_blank')}
+                  className="group"
+                >
+                  <Instagram className="mr-2 group-hover:scale-110 transition-transform" />
+                  Instagram
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  onClick={() => window.open('https://x.com/alexxsedlak', '_blank')}
+                  className="group"
+                >
+                  <Twitter className="mr-2 group-hover:scale-110 transition-transform" />
+                  Twitter
                 </Button>
               </div>
             </div>
