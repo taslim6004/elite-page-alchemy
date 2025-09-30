@@ -1,4 +1,5 @@
 import { Hero } from "@/components/Hero";
+import { VideoShowcase } from "@/components/VideoShowcase";
 import { ProblemSection } from "@/components/ProblemSection";
 import { TrustBrands } from "@/components/TrustBrands";
 import { Features } from "@/components/Features";
@@ -48,8 +49,9 @@ const Index = () => {
       </script>
 
       <main>
-        <Hero />
-        <ProblemSection />
+      <Hero />
+      <VideoShowcase />
+      <ProblemSection />
         <TrustBrands />
         <Features />
         <Testimonials />
