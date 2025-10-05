@@ -93,7 +93,7 @@ export const FAQ = () => {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="mailto:support@medialabs.com"
+                href="mailto:midealab360@gmail.com"
                 className="text-accent hover:text-accent-glow transition-colors font-medium"
               >
                 support@medialabs.com
