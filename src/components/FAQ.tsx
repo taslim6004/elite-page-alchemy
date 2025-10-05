@@ -96,7 +96,7 @@ export const FAQ = () => {
                 href="mailto:midealab360@gmail.com"
                 className="text-accent hover:text-accent-glow transition-colors font-medium"
               >
-                support@medialabs.com
+                midealab360@gmail.com
               </a>
               <span className="text-muted-foreground hidden sm:inline">•</span>
               <span className="text-muted-foreground">Response time: &lt; 24 hours</span>
